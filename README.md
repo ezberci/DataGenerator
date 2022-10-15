@@ -18,4 +18,7 @@ Download key file
 
 gcloud iam service-accounts keys create credentialsFile.json \
 --iam-account=data-generator@data-generator-363818.iam.gserviceaccount.com
-
+------------------------------------------------------------------------
+kubectl create serviceaccount spark
+kubectl create namespace spark
+kubectl create clusterrolebinding spark-role --clusterrole=edit --serviceaccount=default:spark --namespace=spark
