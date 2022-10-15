@@ -14,4 +14,8 @@ docker tag pyspark_data_generator:base $repo/pyspark_data_generator:base
 
 docker push $repo/pyspark_data_generator:base
 ------------------------------------------------------------------------
+Download key file
+
+gcloud iam service-accounts keys create credentialsFile.json \
+--iam-account=data-generator@data-generator-363818.iam.gserviceaccount.com
 
