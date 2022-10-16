@@ -36,4 +36,4 @@ result = x3.build(withTempView=True)
 result.write.format("bigquery") \
     .option("credentialsFile", "/credentialsFile.json") \
     .option("writeMethod", "direct") \
-    .save("data-generator-363818.test.test_table")
+    .save("PROJECT_ID.DATASET.TABLE")
