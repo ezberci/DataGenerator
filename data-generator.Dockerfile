@@ -1,3 +1,4 @@
+ARG repo
 FROM $repo/spark-py:base
 
 USER root
